@@ -83,7 +83,7 @@ source('''<defs>
 </defs>
 <text>
   <textPath href="#headline-curve" startOffset="50%"
-            text-anchor="middle">
+            style="text-anchor: middle;">
     SVG · ByteMarket · Варіант 5
   </textPath>
 </text>''')

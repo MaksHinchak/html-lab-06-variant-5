@@ -10,7 +10,7 @@
       <path d="M0 0 L6 3 L0 6 Z" fill="black" />
     </marker>
   </defs>
-  <g id="animated-shapes" transform="translate(290 245) scale(72 -72)" fill="#0000ff" stroke="black" stroke-width="0.025">
+  <g id="animated-shapes" transform="translate(290 245) scale(72 -72)" style="fill: #0000ff;" stroke="black" stroke-width="0.025">
     <circle id="animated-left-circle" data-figure="left-circle" cx="-2" cy="1" r="1">
       <animate attributeName="fill" values="#0000ff;#ff6b35;#0000ff" dur="4s" repeatCount="indefinite" />
     </circle>
@@ -41,7 +41,7 @@
       </g>
     </g>
   </g>
-  <g id="animated-axes" fill="none" stroke="black" stroke-width="2">
+  <g id="animated-axes" style="fill: none;" stroke="black" stroke-width="2">
     <line x1="38" y1="245" x2="736" y2="245" marker-end="url(#animated-arrow)" />
     <line x1="290" y1="493" x2="290" y2="35" marker-end="url(#animated-arrow)" />
     <line x1="74" y1="235" x2="74" y2="255" />
@@ -58,7 +58,7 @@
     <line x1="280" y1="173" x2="300" y2="173" />
     <line x1="280" y1="101" x2="300" y2="101" />
   </g>
-  <g fill="black" font-family="Times New Roman, serif" font-size="23">
+  <g style="fill: black;" font-family="Times New Roman, serif" font-size="23">
     <text x="748" y="274">X</text>
     <text x="310" y="45">Y</text>
     <text x="278" y="274" text-anchor="end">0</text>

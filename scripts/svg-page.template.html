@@ -71,12 +71,12 @@
     </section>
     <section id="embedding-section" class="content-section" aria-labelledby="embedding-heading">
       <h2 id="embedding-heading">4. Способи вбудовування SVG</h2>
-      <p>Нижче той самий зовнішній файл підключено через object, embed та iframe. Основні приклади вище містять SVG безпосередньо в HTML.</p>
+      <p>Нижче той самий зовнішній файл вбудовано через object, embed та iframe. Основні приклади вище містять SVG безпосередньо в HTML.</p>
       <div class="embedding-grid">
         <figure class="embedding-card"><figcaption>object + param</figcaption>
           <object id="svg-object" data="assets/svg/variant5-static.svg" type="image/svg+xml" width="780" height="540" aria-label="Статичний SVG через object">
             <!-- Param залишено на вимогу методички. -->
-            <!--suppress HtmlDeprecatedTag,XmlDeprecatedElement -->
+            <!--suppress HtmlDeprecatedTag,HtmlDeprecatedAttribute,XmlDeprecatedElement -->
             <param name="view" value="variant-5">
             <p>Відкрийте <a href="assets/svg/variant5-static.svg">SVG-файл</a>, якщо об’єкт не відображається.</p>
           </object>

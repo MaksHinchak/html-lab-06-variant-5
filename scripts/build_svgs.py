@@ -47,7 +47,7 @@ def chart(animated=False):
       </g>
     </g>'''
         ]
-    axes = [f'  <g id="{prefix}-axes" fill="none" stroke="black" stroke-width="2">',
+    axes = [f'  <g id="{prefix}-axes" style="fill: none;" stroke="black" stroke-width="2">',
             f'    <line x1="38" y1="245" x2="736" y2="245" marker-end="url(#{prefix}-arrow)" />',
             f'    <line x1="290" y1="493" x2="290" y2="35" marker-end="url(#{prefix}-arrow)" />']
     for x in [-3, -2, -1, 1, 2, 3, 4, 5]:
@@ -57,7 +57,7 @@ def chart(animated=False):
         py = 245 - y*72
         axes.append(f'    <line x1="280" y1="{py}" x2="300" y2="{py}" />')
     axes.append('  </g>')
-    labels = ['  <g fill="black" font-family="Times New Roman, serif" font-size="23">',
+    labels = ['  <g style="fill: black;" font-family="Times New Roman, serif" font-size="23">',
               '    <text x="748" y="274">X</text>', '    <text x="310" y="45">Y</text>',
               '    <text x="278" y="274" text-anchor="end">0</text>']
     for x in [-3, -1, 1, 2, 3, 4, 5]:
@@ -69,7 +69,7 @@ def chart(animated=False):
   <title id="{prefix}-title">{title}</title>
   <desc id="{prefix}-desc">Два кола, шість прямокутників і ромб синього кольору на осях X та Y. Центри кіл: (-2, 1) і (1, 1), радіус 1. Вершини ромба: (2, -1), (3, 0), (4, -1), (3, -2).</desc>
 {defs}
-  <g id="{prefix}-shapes" transform="translate(290 245) scale(72 -72)" fill="#0000ff" stroke="black" stroke-width="0.025">
+  <g id="{prefix}-shapes" transform="translate(290 245) scale(72 -72)" style="fill: #0000ff;" stroke="black" stroke-width="0.025">
     '''+'\n    '.join(figures)+'\n  </g>\n'+'\n'.join(axes+labels)+'\n</svg>'
 
 
@@ -89,9 +89,11 @@ def curved_text():
     </symbol>
   </defs>
   <ellipse cx="390" cy="185" rx="220" ry="72" fill="#eef7fa" />
-  <use href="#headline-curve" fill="none" stroke="#90afc1" stroke-width="2" stroke-dasharray="6 6" />
+  <use href="#headline-curve" style="fill: none;" stroke="#90afc1" stroke-width="2" stroke-dasharray="6 6" />
   <text fill="#0c3158" font-family="Georgia, serif" font-size="28" letter-spacing="1">
-    <textPath href="#headline-curve" startOffset="50%" text-anchor="middle">SVG · ByteMarket · Варіант 5</textPath>
+    <!-- SVG 2: href and startOffset are standard textPath attributes. -->
+    <!--suppress HtmlDeprecatedAttribute -->
+    <textPath href="#headline-curve" startOffset="50%" style="text-anchor: middle;">SVG · ByteMarket · Варіант 5</textPath>
   </text>
   <polyline points="270,190 390,225 510,190" fill="none" stroke="#157983" stroke-width="3" />
   <use href="#chip-symbol" x="230" y="145" width="80" height="80" />

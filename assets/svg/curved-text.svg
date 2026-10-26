@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="curved-text-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 280" width="780" height="280" role="img" aria-labelledby="curve-title curve-desc">
+<svg id="curved-text-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 280" width="100%" height="100%" role="img" aria-labelledby="curve-title curve-desc">
   <title id="curve-title">Текст уздовж кривої Безьє</title>
   <desc id="curve-desc">Напис SVG, ByteMarket, варіант 5 розташований уздовж вигнутої лінії над трьома векторними мікросхемами.</desc>
   <defs>

@@ -65,7 +65,7 @@ def chart(animated=False):
     for y in [-3, -2, -1, 1, 2]:
         labels.append(f'    <text x="277" y="{253-y*72}" text-anchor="end">{y}</text>')
     labels.append('  </g>')
-    return f'''<svg id="{prefix}-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 540" width="780" height="540" role="img" aria-labelledby="{prefix}-title {prefix}-desc">
+    return f'''<svg id="{prefix}-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 540" width="100%" height="100%" role="img" aria-labelledby="{prefix}-title {prefix}-desc">
   <title id="{prefix}-title">{title}</title>
   <desc id="{prefix}-desc">Два кола, шість прямокутників і ромб синього кольору на осях X та Y. Центри кіл: (-2, 1) і (1, 1), радіус 1. Вершини ромба: (2, -1), (3, 0), (4, -1), (3, -2).</desc>
 {defs}
@@ -74,7 +74,7 @@ def chart(animated=False):
 
 
 def curved_text():
-    return '''<svg id="curved-text-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 280" width="780" height="280" role="img" aria-labelledby="curve-title curve-desc">
+    return '''<svg id="curved-text-drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 280" width="100%" height="100%" role="img" aria-labelledby="curve-title curve-desc">
   <title id="curve-title">Текст уздовж кривої Безьє</title>
   <desc id="curve-desc">Напис SVG, ByteMarket, варіант 5 розташований уздовж вигнутої лінії над трьома векторними мікросхемами.</desc>
   <defs>
